@@ -30,6 +30,10 @@ html {
   font-family: "DM Sans", sans-serif;
 }
 
+hr {
+  border: none;
+}
+
 header {
   position: relative;
   display: flex;
@@ -141,9 +145,7 @@ main-exchange-container--title {
   color: #757575;
 }
 .main-title-tables p {
-  position: relative;
-  left: 80px;
-  display: flex;
+  align-items: center;
   margin-top: 50px;
   margin-bottom: 15px;
   font-size: 1.8rem;
@@ -156,6 +158,12 @@ main-exchange-container--title {
 }
 .main-title-tables .title--comisions {
   color: var(--secundary-blue);
+}
+.main-tables {
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
 .main-tables-container {
   display: grid;
@@ -170,6 +178,10 @@ main-exchange-container--title {
   max-width: 500px;
   width: 196px;
   border-radius: 5px;
+}
+.main--article {
+  margin: auto;
+  scroll-snap-align: center;
 }
 .main-tables-container div {
   position: relative;
@@ -384,7 +396,6 @@ main-exchange-container--title {
 
 .plans-container--slider {
   display: flex;
-  gap: 20px;
   height: 316px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -394,10 +405,10 @@ main-exchange-container--title {
   position: relative;
   scroll-snap-align: center;
   width: 70%;
-  min-width: 230px;
+  min-width: 190px;
   max-width: 300px;
   height: 250px;
-  margin: 50px auto 0;
+  margin: 50px 5px 0;
   padding: 0 15px;
   background-color: var(--just-white);
   border-radius: 15px;
@@ -489,4 +500,30 @@ main-exchange-container--title {
 .arrow-green {
   background-image: url("assets/icons/Inkedgreen\ arrow_LI.jpg");
   background-size: cover;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+footer section {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+footer .left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+.left li {
+  margin: 10px 0;
+}
+.left a {
+  text-decoration: none;
+  color: var(--just-white);
 }

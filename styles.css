@@ -129,6 +129,7 @@ main-exchange-container--title {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 .main-exchange-container h2 {
   margin-bottom: 30px;
